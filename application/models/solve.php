@@ -3,6 +3,7 @@
    function __construct(){
    	parent::__construct();
    }
+//GET 获取信息
 public  function getData()
 {
     $id=$this->uri->segment(3);
@@ -72,6 +73,7 @@ public  function getData()
 } 
 public  function postData()
 {}
+//PUT 更新信息
 public  function putData()
 {
     $json = $this->initor->check('PUT');

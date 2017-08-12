@@ -34,7 +34,7 @@ public function check_sn($json)
   
   }
 }
-
+//身份修改
 public function change_sn($json,$sn)
 {
   $data = $this->db->where('sn',$json->sn)->get('all_students')->first_row();

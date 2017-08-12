@@ -59,7 +59,7 @@ public  function getData()
              return $arr;
     }
 }
-
+//GET 新建信息
 public  function postData()
 {
     $json = $this->initor->check('POST');
@@ -97,7 +97,7 @@ public  function postData()
                   return $arr;
          }
 }
-//PUT /class/ID：更新某个指定班的信息（全部信息）
+//PUT 更新信息
 public  function putData()
 {
     $json = $this->initor->check('PUT');
@@ -137,6 +137,7 @@ public  function putData()
              return $arr;
     }
 }
+//DELETE 删除信息
 public  function deleteData()
 {
  	$json = $this->initor->check('DELETE');

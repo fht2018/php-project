@@ -3,6 +3,7 @@
    function __construct(){
    	parent::__construct();
    }
+//GET 获取信息
 public  function getData()
 {
     $json=$this->initor->check('GET');
@@ -39,6 +40,7 @@ public  function getData()
                      echo json_encode($arr);exit();    
               }
 } 
+//POST 新建信息
 public  function postData()
 {
     $id=$this->uri->segment(3);
@@ -140,6 +142,7 @@ public  function postData()
     }
 
 }
+//PUT 更新信息
 public  function putData()
 {
     $id=$this->uri->segment(3);
@@ -253,6 +256,7 @@ public  function putData()
                 }
 
 }
+//DELETE 删除信息
 public  function deleteData()
 {
     $json = $this->initor->check('DELETE');
