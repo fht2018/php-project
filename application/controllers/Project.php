@@ -14,7 +14,7 @@ class Project extends CI_Controller {
     }
     //根据请求方式调用对应方法
     public function getRequest() {
-        $method_type = array(//允许的请求方式
+        $method_type = array( //允许的请求方式
             'get',
             'post',
             'put',
@@ -56,5 +56,4 @@ class Project extends CI_Controller {
         }
     }
 }
-
 
